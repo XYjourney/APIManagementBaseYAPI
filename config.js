@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
-console.log(process.env.NODE_ENV)
-const env = process.env.NODE_ENV === "production" ? ".prod" : "";
+console.log(process.env.YAPI_NODE_ENV)
+const env = process.env.YAPI_NODE_ENV === "production" ? ".prod" : "";
 console.log("env\n")
 console.log(env);
 const configFileName = `config${env}.js`
