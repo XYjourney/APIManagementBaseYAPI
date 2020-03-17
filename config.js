@@ -56,7 +56,7 @@ const defaultConfig = {
 }
 console.log("configENV\n")
 console.log(configWithEnv)
-const config = {...defaultConfig, configWithEnv}
+const config = {...defaultConfig, ...configWithEnv}
 console.log("config\n")
 console.log(config)
 module.exports = config
